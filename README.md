@@ -1,6 +1,6 @@
-# Copenhagen Theme by Zendesk
+# FORWARD Sync Zendesk Theme
 
-The Copenhagen theme is the default Zendesk Guide theme. It is designed to be responsive and accessible.
+This theme is based on the Copenhagen theme is the default Zendesk Guide theme. It is designed to be responsive and accessible.
 Learn more about customizing Zendesk Guide [here](https://support.zendesk.com/hc/en-us/sections/206670747).
 
 The Copenhagen theme for Help Center consists of:
