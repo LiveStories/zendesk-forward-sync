@@ -1,12 +1,13 @@
 /***** Hero component *****/
 .hero {
-  background-image: url($homepage_background_image);
-  background-position: center;
-  background-size: cover;
-  height: 300px;
+  height: 15rem;
   padding: 0 20px;
   text-align: center;
   width: 100%;
+
+  h1 {
+    font-size: 40px;
+  }
 
   &-inner {
     @include vertical-align;

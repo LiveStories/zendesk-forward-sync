@@ -622,6 +622,11 @@ ul {
 }
 
 /***** Header *****/
+.header-wrapper {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+}
+
 .header {
   max-width: 1160px;
   margin: 0 auto;
@@ -629,7 +634,7 @@ ul {
   position: relative;
   align-items: center;
   display: flex;
-  height: 71px;
+  height: 80px;
   justify-content: space-between;
 }
 @media (min-width: 1160px) {
@@ -639,21 +644,24 @@ ul {
   }
 }
 
-.logo img {
+.logo {
   max-height: 37px;
   vertical-align: middle;
-}
-
-.logo span {
-  margin: 0 10px;
-  color: $brand_color;
 }
 
 .logo a {
   display: inline-block;
 }
 
-.logo a:hover, .logo a:focus, .logo a:active {
+.logo svg {
+  height: 32px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.logo a:hover,
+.logo a:focus,
+.logo a:active {
   text-decoration: none;
 }
 
@@ -673,7 +681,7 @@ ul {
   border: solid 1px #ddd;
   right: 0;
   left: 0;
-  top: 71px;
+  top: 80px;
   z-index: 1;
 }
 .user-nav[aria-expanded=true] > a {
@@ -732,6 +740,29 @@ ul {
   color: $link_color;
   text-decoration: underline;
 }
+.nav-wrapper-desktop a.submit-a-request {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.nav-wrapper-desktop a.sign-in {
+  border: 0;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 16px;
+  padding: 13px 26px 13px 26px;
+  width: auto;
+  background: $visited_link_color;
+  border: 2px solid $visited_link_color;
+  transition: all 0.2s ease-in-out;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.nav-wrapper-desktop a.sign-in:hover, .nav-wrapper-desktop a.sign-in:active {
+  background-color: #fff;
+  box-sizing: border-box;
+  color: $visited_link_color;
+  text-decoration: none;
+}
 
 @media (min-width: 1024px) {
   .nav-wrapper-mobile {
@@ -763,7 +794,7 @@ ul {
   border-bottom: solid 1px #ddd;
   right: 0;
   left: 0;
-  top: 71px;
+  top: 80px;
   z-index: 2;
 }
 .nav-wrapper-mobile .menu-list-mobile[aria-expanded=false] {
@@ -815,7 +846,7 @@ ul {
 }
 .nav-wrapper-mobile .menu-list-mobile-items .my-profile .my-profile-tooltip {
   font-size: 12px;
-  color: #68737D;
+  color: #68737d;
 }
 .nav-wrapper-mobile .menu-list-mobile-items .menu-profile-avatar {
   height: 20px;
@@ -945,9 +976,9 @@ ul {
 
 /***** Footer *****/
 .footer {
-  border-top: 1px solid #ddd;
-  margin-top: 60px;
+  background-color: #404040;
   padding: 30px 0;
+  color: #dfdfdf;
 }
 .footer a {
   color: lighten($text_color, 20%);
@@ -958,6 +989,7 @@ ul {
   padding: 0 5%;
   display: flex;
   justify-content: space-between;
+  text-transform: uppercase;
 }
 @media (min-width: 1160px) {
   .footer-inner {
@@ -1109,6 +1141,10 @@ ul {
   border-right-color: $brand_color;
 }
 
+.search-wrapper {
+  position: relative;
+}
+
 .search-icon {
   position: relative;
   top: 50%;
@@ -1128,13 +1164,13 @@ ul {
 
 /***** Hero component *****/
 .hero {
-  background-image: url($homepage_background_image);
-  background-position: center;
-  background-size: cover;
-  height: 300px;
+  height: 15rem;
   padding: 0 20px;
   text-align: center;
   width: 100%;
+}
+.hero h1 {
+  font-size: 40px;
 }
 .hero-inner {
   position: relative;
@@ -1236,19 +1272,22 @@ ul {
   }
 }
 .blocks-item {
-  border: 1px solid $brand_color;
-  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
   box-sizing: border-box;
-  color: $brand_color;
+  color: $text_color;
+  background: #fff;
   display: flex;
-  flex: 1 0 340px;
+  flex: 2 0 240px;
   margin: 0 0 30px;
   max-width: 100%;
   text-align: center;
+  height: 167px;
+  transition: all 0.2s ease-in-out;
 }
 @media (min-width: 768px) {
   .blocks-item {
-    margin: 0 15px 30px;
+    margin: 0 5px 10px;
   }
 }
 .blocks-item:hover, .blocks-item:focus, .blocks-item:active {
@@ -1257,6 +1296,9 @@ ul {
 .blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
   color: $brand_text_color;
   text-decoration: none;
+}
+.blocks-item:visited {
+  color: $text_color;
 }
 .blocks-item-internal {
   background-color: transparent;
@@ -1272,7 +1314,7 @@ ul {
   color: $text_color;
 }
 .blocks-item-link {
-  color: $brand_color;
+  color: $text_color;
   padding: 20px 30px;
   display: flex;
   flex-direction: column;
@@ -1301,13 +1343,12 @@ ul {
 }
 
 /***** Homepage *****/
-.section {
-  margin-bottom: 40px;
-}
-@media (min-width: 768px) {
-  .section {
-    margin-bottom: 60px;
-  }
+.home-wrapper {
+  background-image: url($homepage_background_image);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 85vh;
 }
 
 .home-section h2 {
