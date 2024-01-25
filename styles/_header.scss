@@ -1,6 +1,11 @@
 /***** Header *****/
 $header-height: 80px;
 
+.header-wrapper {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+}
+
 .header {
   @include max-width-container;
   position: relative;
@@ -29,33 +34,6 @@ $header-height: 80px;
 .logo a:focus,
 .logo a:active {
   text-decoration: none;
-}
-
-.sign-in {
-  @include mobile {
-    display: none;
-  }
-  @include tablet {
-    display: none;
-  }
-  @include desktop {
-    display: inline-block;
-  }
-  a {
-    border: 0;
-    border-radius: 15px;
-    color: #fff;
-    font-size: 16px;
-    padding: 13px 26px 13px 26px;
-    width: auto;
-    background: #e52d18;
-    &:hover,
-    &:active {
-      background-color: transparent;
-      color: #fff;
-      text-decoration: none;
-    }
-  }
 }
 
 .user-nav {
@@ -135,6 +113,30 @@ $header-height: 80px;
       background-color: transparent;
       color: $link_color;
       text-decoration: underline;
+    }
+    &.submit-a-request {
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    &.sign-in {
+      border: 0;
+      border-radius: 15px;
+      color: #fff;
+      font-size: 16px;
+      padding: 13px 26px 13px 26px;
+      width: auto;
+      background: #e52d18;
+      border: 2px solid #e52d18;
+      transition: all 0.2s ease-in-out;
+      text-transform: capitalize;
+      font-weight: 700;
+      &:hover,
+      &:active {
+        background-color: #fff;
+        box-sizing: border-box;
+        color: #e52d18;
+        text-decoration: none;
+      }
     }
   }
 }

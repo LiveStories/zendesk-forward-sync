@@ -622,6 +622,11 @@ ul {
 }
 
 /***** Header *****/
+.header-wrapper {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+}
+
 .header {
   max-width: 1160px;
   margin: 0 auto;
@@ -657,36 +662,6 @@ ul {
 .logo a:hover,
 .logo a:focus,
 .logo a:active {
-  text-decoration: none;
-}
-
-@media (max-width: 768px) {
-  .sign-in {
-    display: none;
-  }
-}
-@media (min-width: 768px) {
-  .sign-in {
-    display: none;
-  }
-}
-@media (min-width: 1024px) {
-  .sign-in {
-    display: inline-block;
-  }
-}
-.sign-in a {
-  border: 0;
-  border-radius: 15px;
-  color: #fff;
-  font-size: 16px;
-  padding: 13px 26px 13px 26px;
-  width: auto;
-  background: #e52d18;
-}
-.sign-in a:hover, .sign-in a:active {
-  background-color: transparent;
-  color: #fff;
   text-decoration: none;
 }
 
@@ -764,6 +739,29 @@ ul {
   background-color: transparent;
   color: $link_color;
   text-decoration: underline;
+}
+.nav-wrapper-desktop a.submit-a-request {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.nav-wrapper-desktop a.sign-in {
+  border: 0;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 16px;
+  padding: 13px 26px 13px 26px;
+  width: auto;
+  background: #e52d18;
+  border: 2px solid #e52d18;
+  transition: all 0.2s ease-in-out;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.nav-wrapper-desktop a.sign-in:hover, .nav-wrapper-desktop a.sign-in:active {
+  background-color: #fff;
+  box-sizing: border-box;
+  color: #e52d18;
+  text-decoration: none;
 }
 
 @media (min-width: 1024px) {
@@ -1161,10 +1159,7 @@ ul {
 
 /***** Hero component *****/
 .hero {
-  background-image: url($homepage_background_image);
-  background-position: center;
-  background-size: cover;
-  height: 300px;
+  height: 100px;
   padding: 0 20px;
   text-align: center;
   width: 100%;
@@ -1334,13 +1329,18 @@ ul {
 }
 
 /***** Homepage *****/
-.section {
-  margin-bottom: 40px;
-}
 @media (min-width: 768px) {
   .section {
     margin-bottom: 60px;
   }
+}
+
+.home-wrapper {
+  background-image: url($homepage_background_image);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 85vh;
 }
 
 .home-section h2 {
