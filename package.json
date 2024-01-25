@@ -10,14 +10,15 @@
     "download-locales": "node ./bin/update-translations",
     "test": "jest",
     "test-a11y": "node bin/lighthouse/index.js",
-    "zcli": "zcli"
+    "zcli": "zcli",
+    "dev": "rollup -c && zcli themes:preview"
   },
   "dependencies": {
     "node-fetch": "2.6.9"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.3.0",
-    "@commitlint/config-conventional": "17.3.0",
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
     "@semantic-release/changelog": "6.0.2",
     "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
