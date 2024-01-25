@@ -1,9 +1,8 @@
 /***** Footer *****/
 .footer {
-  border-top: 1px solid $low-contrast-border-color;
-  margin-top: 60px;
+  background-color: #404040;
   padding: 30px 0;
-
+  color: #dfdfdf;
   a {
     color: $secondary-text-color;
   }
@@ -12,6 +11,7 @@
     @include max-width-container;
     display: flex;
     justify-content: space-between;
+    text-transform: uppercase;
   }
 
   &-language-selector button {

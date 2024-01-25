@@ -1,11 +1,5 @@
 /***** Homepage *****/
 
-.section {
-  @include tablet {
-    margin-bottom: 60px;
-  }
-}
-
 .home-wrapper {
   background-image: url($homepage_background_image);
   background-position: center;

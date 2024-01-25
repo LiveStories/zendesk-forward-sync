@@ -1,9 +1,13 @@
 /***** Hero component *****/
 .hero {
-  height: 100px;
+  height: 15rem;
   padding: 0 20px;
   text-align: center;
   width: 100%;
+
+  h1 {
+    font-size: 40px;
+  }
 
   &-inner {
     @include vertical-align;

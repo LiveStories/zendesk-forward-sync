@@ -21,19 +21,19 @@ $padding-right: 20px;
     border-color: $brand_color;
   }
 
-  input[type="search"], 
+  input[type='search'],
   .clear-button {
     background-color: #fff;
     border-radius: 30px;
     border: none;
   }
 
-  &-full input[type="search"], 
+  &-full input[type='search'],
   &-full .clear-button {
     border-color: #fff;
   }
 
-  input[type="search"] {
+  input[type='search'] {
     appearance: none;
     -webkit-appearance: none;
     box-sizing: border-box;
@@ -54,11 +54,10 @@ $padding-right: 20px;
     }
 
     &:-webkit-autofill,
-    &:-webkit-autofill:hover, 
+    &:-webkit-autofill:hover,
     &:-webkit-autofill:focus {
       -webkit-box-shadow: 0 0 0 1000px #fff inset;
     }
-
   }
 
   .clear-button {
@@ -79,22 +78,20 @@ $padding-right: 20px;
     &:focus {
       @include focus-ring;
     }
-
   }
 
   &-has-value .clear-button {
     display: flex;
   }
-
 }
 
-[dir="ltr"] .search {
-  input[type="search"] {
+[dir='ltr'] .search {
+  input[type='search'] {
     padding-left: $padding-left;
     padding-right: $padding-right;
   }
 
-  &-has-value input[type="search"] {
+  &-has-value input[type='search'] {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     border-right-color: transparent;
@@ -102,7 +99,6 @@ $padding-right: 20px;
     &:focus {
       border-right-color: $brand_color;
     }
-
   }
 
   .clear-button {
@@ -113,17 +109,16 @@ $padding-right: 20px;
     &:focus {
       border-left-color: $brand_color;
     }
-    
   }
 }
 
-[dir="rtl"] .search {
-  input[type="search"] {
+[dir='rtl'] .search {
+  input[type='search'] {
     padding-left: $padding-right;
     padding-right: $padding-left;
   }
 
-  &-has-value input[type="search"] {
+  &-has-value input[type='search'] {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     border-left-color: transparent;
@@ -131,7 +126,6 @@ $padding-right: 20px;
     &:focus {
       border-left-color: $brand_color;
     }
-
   }
 
   .clear-button {
@@ -142,8 +136,11 @@ $padding-right: 20px;
     &:focus {
       border-right-color: $brand_color;
     }
-
   }
+}
+
+.search-wrapper {
+  position: relative;
 }
 
 .search-icon {
@@ -156,7 +153,7 @@ $padding-right: 20px;
   color: $icon-color;
   pointer-events: none;
 
-  [dir="rtl"] & {
+  [dir='rtl'] & {
     left: auto;
     right: 15px;
   }

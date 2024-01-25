@@ -1,17 +1,17 @@
 {
-  "name": "copenhagen_theme",
+  "name": "forward_sync_theme",
   "version": "1.0.0",
   "repository": "git@github.com:zendesk/copenhagen_theme.git",
   "scripts": {
     "start": "concurrently -k -r 'rollup -c -w' 'wait-on script.js style.css && zcli themes:preview'",
+    "dev": "concurrently -k -r \"rollup -c -w\" \"wait-on script.js style.css && zcli themes:preview\"",
     "build": "rollup -c",
     "eslint": "eslint src",
     "prepare": "husky install",
     "download-locales": "node ./bin/update-translations",
     "test": "jest",
     "test-a11y": "node bin/lighthouse/index.js",
-    "zcli": "zcli",
-    "dev": "rollup -c && zcli themes:preview"
+    "zcli": "zcli"
   },
   "dependencies": {
     "node-fetch": "2.6.9"
