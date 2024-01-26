@@ -197,6 +197,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (min-width: 1024px) {
+  body > main {
+    min-height: 88vh;
+  }
+}
+
 h1,
 h2,
 h3,
