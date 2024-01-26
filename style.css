@@ -1321,6 +1321,7 @@ ul {
   flex: 1;
   justify-content: center;
   border-radius: inherit;
+  align-items: center;
 }
 .blocks-item-link:visited, .blocks-item-link:hover, .blocks-item-link:active {
   color: inherit;
@@ -1330,6 +1331,13 @@ ul {
   outline: 0;
   box-shadow: 0 0 0 3px $brand_color;
   text-decoration: none;
+}
+.blocks-item-link .block-icon {
+  margin-bottom: 1rem;
+  background-position: center;
+  background-size: cover;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 .blocks-item-title {
   margin-bottom: 0;
@@ -1348,12 +1356,45 @@ ul {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 85vh;
+  min-height: 88vh;
+  height: 100%;
 }
 
 .home-section h2 {
   margin-bottom: 10px;
   text-align: center;
+}
+
+.schedule-a-demo {
+  background-image: url($schedule_a_demo);
+}
+
+.updates-and-announcements {
+  background-image: url($updates_and_announcements);
+}
+
+.general-information {
+  background-image: url($general_info);
+}
+
+.frequently-asked-questions {
+  background-image: url($frequently_asked_questions);
+}
+
+.account-and-billing {
+  background-image: url($account_and_billing);
+}
+
+.accessibility-and-language-support {
+  background-image: url($accessibility_and_language_support);
+}
+
+.guides-tutorials-and-training {
+  background-image: url($guides_tutorials_and_training);
+}
+
+.technical-support-and-support-requests {
+  background-image: url($technical_supports_and_support_requests);
 }
 
 /***** Promoted articles *****/

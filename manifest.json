@@ -292,6 +292,38 @@
           "description": "recent_activity_description",
           "label": "recent_activity_label",
           "value": true
+        },
+        {
+          "identifier": "schedule_a_demo",
+          "type": "file"
+        },
+        {
+          "identifier": "updates_and_announcements",
+          "type": "file"
+        },
+        {
+          "identifier": "frequently_asked_questions",
+          "type": "file"
+        },
+        {
+          "identifier": "general_info",
+          "type": "file"
+        },
+        {
+          "identifier": "guides_tutorials_and_training",
+          "type": "file"
+        },
+        {
+          "identifier": "technical_supports_and_support_requests",
+          "type": "file"
+        },
+        {
+          "identifier": "account_and_billing",
+          "type": "file"
+        },
+        {
+          "identifier": "accessibility_and_language_support",
+          "type": "file"
         }
       ]
     },
