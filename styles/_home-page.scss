@@ -5,13 +5,33 @@
   background-position: center;
   background-size: cover;
   width: 100%;
-  min-height: 88vh;
   height: 100%;
+  @include mobile {
+    min-height: 170vh;
+  }
+  @include tablet {
+    min-height: 80vh;
+  }
+  @include desktop {
+    min-height: 80vh;
+  }
 }
 
 .home-section h2 {
   margin-bottom: 10px;
   text-align: center;
+}
+
+.home-blocks {
+  position: relative;
+  top: 100px;
+  @include mobile {
+    top: 50px;
+  }
+}
+
+.home-container {
+  @include max-width-container;
 }
 
 .schedule-a-demo {

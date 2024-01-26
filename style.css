@@ -186,6 +186,18 @@ template {
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    height: auto;
+  }
+}
+
 body {
   background-color: $background_color;
   color: $text_color;
@@ -196,11 +208,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
-@media (min-width: 1024px) {
-  body > main {
-    min-height: 88vh;
-  }
+body > main {
+  flex: auto;
 }
 
 h1,
@@ -298,6 +311,9 @@ textarea:focus {
   max-width: 1160px;
   margin: 0 auto;
   padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
 }
 @media (min-width: 1160px) {
   .container {
@@ -305,10 +321,23 @@ textarea:focus {
     width: 90%;
   }
 }
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    margin-bottom: 3rem;
+  }
+}
 
 .container-divider {
-  border-top: 1px solid #ddd;
   margin-bottom: 20px;
+  margin-top: 100px;
+  display: block;
+  height: 20px;
+}
+@media (max-width: 768px) {
+  .container-divider {
+    margin-top: 60px;
+  }
 }
 
 ul {
@@ -627,7 +656,13 @@ ul {
 /***** Header *****/
 .header-wrapper {
   border-bottom: 1px solid #ccc;
-  display: flex;
+  display: block;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  z-index: 2;
 }
 
 .header {
@@ -1001,6 +1036,14 @@ ul {
     width: 90%;
   }
 }
+@media (max-width: 768px) {
+  .footer-inner {
+    flex-direction: column;
+  }
+  .footer-inner div {
+    margin-bottom: 0.5rem;
+  }
+}
 .footer-language-selector button {
   color: lighten($text_color, 20%);
   display: inline-block;
@@ -1168,13 +1211,25 @@ ul {
 
 /***** Hero component *****/
 .hero {
+  position: relative;
+  top: 100px;
   height: 15rem;
   padding: 0 20px;
   text-align: center;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .hero {
+    top: 50px;
+  }
+}
 .hero h1 {
   font-size: 40px;
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 24px;
+  }
 }
 .hero-inner {
   position: relative;
@@ -1299,10 +1354,10 @@ ul {
   }
 }
 .blocks-item:hover, .blocks-item:focus, .blocks-item:active {
-  background-color: $brand_color;
+  background-color: #c9f4fe;
 }
 .blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
-  color: $brand_text_color;
+  color: $text_color;
   text-decoration: none;
 }
 .blocks-item:visited {
@@ -1362,13 +1417,49 @@ ul {
   background-position: center;
   background-size: cover;
   width: 100%;
-  min-height: 88vh;
   height: 100%;
+}
+@media (max-width: 768px) {
+  .home-wrapper {
+    min-height: 170vh;
+  }
+}
+@media (min-width: 768px) {
+  .home-wrapper {
+    min-height: 80vh;
+  }
+}
+@media (min-width: 1024px) {
+  .home-wrapper {
+    min-height: 80vh;
+  }
 }
 
 .home-section h2 {
   margin-bottom: 10px;
   text-align: center;
+}
+
+.home-blocks {
+  position: relative;
+  top: 100px;
+}
+@media (max-width: 768px) {
+  .home-blocks {
+    top: 50px;
+  }
+}
+
+.home-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+@media (min-width: 1160px) {
+  .home-container {
+    padding: 0;
+    width: 90%;
+  }
 }
 
 .schedule-a-demo {

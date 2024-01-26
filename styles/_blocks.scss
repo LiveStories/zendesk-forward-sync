@@ -37,10 +37,10 @@
     &:hover,
     &:focus,
     &:active {
-      background-color: $brand_color;
+      background-color: #c9f4fe;
 
       * {
-        color: $brand_text_color;
+        color: $text_color;
         text-decoration: none;
       }
     }

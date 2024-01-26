@@ -1,11 +1,19 @@
 /***** Hero component *****/
 .hero {
+  position: relative;
+  top: 100px;
   height: 15rem;
   padding: 0 20px;
   text-align: center;
   width: 100%;
+  @include mobile {
+    top: 50px;
+  }
   h1 {
     font-size: 40px;
+    @include mobile {
+      font-size: 24px;
+    }
   }
 
   &-inner {
