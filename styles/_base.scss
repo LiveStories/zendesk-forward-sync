@@ -6,7 +6,7 @@
 body {
   background-color: $background_color;
   color: $text_color;
-  font-family: $text_font;
+  font-family: Open Sans, sans-serif;
   font-size: $font-size-base;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -26,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $heading_font;
+  font-family: Open Sans, sans-serif;
   margin-top: 0;
 }
 

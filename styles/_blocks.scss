@@ -19,9 +19,13 @@
     }
 
     border: 1px solid rgb(0, 0, 0, 0.15);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     box-sizing: border-box;
     color: $text_color;
+    font-weight: 600;
+    font-size: 14px;
     background: #fff;
     display: flex;
     flex: 2 0 240px;
@@ -63,7 +67,7 @@
 
   &-item-link {
     color: $text_color;
-    padding: 20px 30px;
+    padding: 20px 35px;
     display: flex;
     flex-direction: column;
     flex: 1;
