@@ -295,35 +295,51 @@
         },
         {
           "identifier": "schedule_a_demo",
-          "type": "file"
+          "type": "file",
+          "description": "",
+          "label": ""
         },
         {
           "identifier": "updates_and_announcements",
-          "type": "file"
+          "type": "file",
+          "description": "",
+          "label": ""
         },
         {
           "identifier": "frequently_asked_questions",
-          "type": "file"
+          "type": "file",
+          "description": "",
+          "label": ""
         },
         {
           "identifier": "general_info",
-          "type": "file"
+          "type": "file",
+          "description": "",
+          "label": ""
         },
         {
           "identifier": "guides_tutorials_and_training",
-          "type": "file"
+          "type": "file",
+          "description": "",
+          "label": ""
         },
         {
           "identifier": "technical_supports_and_support_requests",
-          "type": "file"
+          "type": "file",
+          "description": "",
+          "label": ""
         },
         {
           "identifier": "account_and_billing",
-          "type": "file"
+          "type": "file",
+          "description": "",
+          "label": ""
         },
         {
           "identifier": "accessibility_and_language_support",
-          "type": "file"
+          "type": "file",
+          "description": "",
+          "label": ""
         }
       ]
     },
