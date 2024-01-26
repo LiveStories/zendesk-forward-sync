@@ -254,54 +254,6 @@
           "type": "file",
           "description": "community_image_description",
           "label": "community_image_label"
-        },
-        {
-          "identifier": "schedule_a_demo",
-          "type": "file",
-          "description": "",
-          "label": ""
-        },
-        {
-          "identifier": "updates_and_announcements",
-          "type": "file",
-          "description": "",
-          "label": ""
-        },
-        {
-          "identifier": "frequently_asked_questions",
-          "type": "file",
-          "description": "",
-          "label": ""
-        },
-        {
-          "identifier": "general_info",
-          "type": "file",
-          "description": "",
-          "label": ""
-        },
-        {
-          "identifier": "guides_tutorials_and_training",
-          "type": "file",
-          "description": "",
-          "label": ""
-        },
-        {
-          "identifier": "technical_supports_and_support_requests",
-          "type": "file",
-          "description": "",
-          "label": ""
-        },
-        {
-          "identifier": "account_and_billing",
-          "type": "file",
-          "description": "",
-          "label": ""
-        },
-        {
-          "identifier": "accessibility_and_language_support",
-          "type": "file",
-          "description": "",
-          "label": ""
         }
       ]
     },

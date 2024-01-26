@@ -193,13 +193,10 @@ body {
   font-size: 15px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-@media (min-width: 1024px) {
-  body > main {
-    min-height: 65vh;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -1332,10 +1329,8 @@ ul {
   box-shadow: 0 0 0 3px $brand_color;
   text-decoration: none;
 }
-.blocks-item-link .block-icon {
+.blocks-item-link svg {
   margin-bottom: 1rem;
-  background-position: center;
-  background-size: cover;
   width: 1.8rem;
   height: 1.8rem;
 }
@@ -1705,6 +1700,7 @@ ul {
 @media (min-width: 1024px) {
   .article-container {
     flex-direction: row;
+    margin-bottom: 3rem;
   }
 }
 .article-header {
