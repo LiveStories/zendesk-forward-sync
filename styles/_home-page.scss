@@ -34,38 +34,6 @@
   @include max-width-container;
 }
 
-.schedule-a-demo {
-  background-image: url($schedule_a_demo);
-}
-
-.updates-and-announcements {
-  background-image: url($updates_and_announcements);
-}
-
-.general-information {
-  background-image: url($general_info);
-}
-
-.frequently-asked-questions {
-  background-image: url($frequently_asked_questions);
-}
-
-.account-and-billing {
-  background-image: url($account_and_billing);
-}
-
-.accessibility-and-language-support {
-  background-image: url($accessibility_and_language_support);
-}
-
-.guides-tutorials-and-training {
-  background-image: url($guides_tutorials_and_training);
-}
-
-.technical-support-and-support-requests {
-  background-image: url($technical_supports_and_support_requests);
-}
-
 /***** Promoted articles *****/
 
 .promoted-articles {
